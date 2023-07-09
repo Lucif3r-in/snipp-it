@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <div className="navbar">
+    <div className="navbar bg-base-100">
       <div className="flex-1">
         <a
           className="btn btn-ghost normal-case text-xl text-[#cbc8c8] hover:text-[#e9e3e3]"
