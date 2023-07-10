@@ -1,15 +1,15 @@
+/* eslint-disable react/prop-types */
 import Editor from "react-simple-code-editor";
 import Prism from "prismjs";
-import PropTypes from "prop-types";
 
 const Code = ({ code, setCode }) => {
   return (
-    <div className="p-6">
+    <div className="code-input line-numbers">
       <Editor
         value={code}
         onValueChange={(code) => setCode(code)}
         highlight={(code) => Prism.highlight(code, Prism.languages.js)}
-        padding={6}
+        padding={10}
         style={{
           fontFamily: '"Fira code", "Fira Mono", monospace',
           fontSize: 12,
@@ -18,8 +18,5 @@ const Code = ({ code, setCode }) => {
     </div>
   );
 };
-Code.propTypes = {
-  code: PropTypes.string.isRequired,
-  setCode: PropTypes.func.isRequired,
-};
+
 export default Code;

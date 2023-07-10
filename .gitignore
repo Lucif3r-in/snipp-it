@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+CodeSnippet.jsx
+Menu.jsx

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const CodeTitle = () => {
-  const [title, setTitle] = useState("Title");
+  const [title, setTitle] = useState("Hello World");
   const [showInput, setShowInput] = useState(false);
 
   return (
@@ -33,7 +33,7 @@ const CodeTitle = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
                 height="15"
-                fill="var(--green)"
+                fill="var(--color-6)"
                 viewBox="0 0 16 16"
               >
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />

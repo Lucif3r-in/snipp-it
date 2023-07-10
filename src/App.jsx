@@ -1,17 +1,16 @@
-import Code from "./CodeIde/Code";
-import Navbar from "./shared/Navbar";
-import Footer from "./shared/footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CodeSnippet } from "./pages/";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Navbar />
-      <div className="code">
-        <Code />
+    <Router>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<CodeSnippet />} />
+        </Routes>
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;
